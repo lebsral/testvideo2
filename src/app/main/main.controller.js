@@ -1,9 +1,11 @@
 'use strict';
 
 angular.module('myapp', ['ngSanitize',
+      'angulartics',
       'com.2fdevs.videogular',
       'com.2fdevs.videogular.plugins.controls',
       'com.2fdevs.videogular.plugins.overlayplay',
+      'com.2fdevs.videogular.analytics',
       'com.2fdevs.videogular.plugins.poster'])
   .controller('MainCtrl', 
 
@@ -28,7 +30,7 @@ angular.module('myapp', ['ngSanitize',
           poster: 'http://www.videogular.com/assets/images/videogular.png'
         }
       };
-    }]
+    }];
 
     function ($scope) {
     $scope.awesomeThings = [
